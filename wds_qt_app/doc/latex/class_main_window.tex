@@ -1,0 +1,232 @@
+\hypertarget{class_main_window}{}\doxysection{Main\+Window Class Reference}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_a42f11195758f78967e670779c4535708}{read\+From\+Port}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_a74bf7ec51582db3d2d98265b66afc0cc}{on\+\_\+push\+Button\+Connect\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_a38e5a7fd929962f8ff7591a3d688f9c3}{on\+\_\+push\+Button\+Disconnect\+\_\+clicked}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_af66d26a7096dacebe749cdb2499e00ef}{show\+Main\+Board}} (QString message)
+\item 
+void \mbox{\hyperlink{class_main_window_a44d3d738404831c63569f8ffe4eaaf2d}{show\+Finger\+Data\+\_\+1}} (QString message)
+\begin{DoxyCompactList}\small\item\em Funkcja wyświetla dane w zakresie 0-\/1023 odpowiadające zgjęciu kciuka. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a551c249b3281829456cf70edb57998bb}{show\+Finger\+Data\+\_\+2}} (QString message)
+\begin{DoxyCompactList}\small\item\em Funkcja wyświetla dane w zakresie 0-\/1023 odpowiadające zgjęciu palca wskazującego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_af86122045b7e201bddb3be900b0ef9db}{show\+Finger\+Data\+\_\+3}} (QString message)
+\begin{DoxyCompactList}\small\item\em Funkcja wyświetla dane w zakresie 0-\/1023 odpowiadające zgjęciu palca środkowego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a92786e396ec2be22b9b4b90ce5c9adbd}{show\+Finger\+Data\+\_\+4}} (QString message)
+\begin{DoxyCompactList}\small\item\em Funkcja wyświetla dane w zakresie 0-\/1023 odpowiadające zgjęciu palca serdecznego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a5357fb7fa27e83a1a507b14cdb64f16b}{show\+Finger\+Data\+\_\+5}} (QString message)
+\begin{DoxyCompactList}\small\item\em Funkcja wyświetla dane w zakresie 0-\/1023 odpowiadające zgjęciu małego palca. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ace950b55062506b0e7759f5b559def74}{show\+Alpha\+Angle\+Data}} (QString message)
+\begin{DoxyCompactList}\small\item\em Funkcja wyświetla dane odpowiadające obrotowi dłoni w osi X. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a9b677b11681f683ab0bbc513c8eea986}{show\+Beta\+Angle\+Data}} (QString message)
+\begin{DoxyCompactList}\small\item\em Funkcja wyświetla dane odpowiadające obrotowi dłoni w osi Y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ac694b61c9183b8353bef1bb36908ed58}{show\+Gamma\+Angle\+Data}} (QString message)
+\begin{DoxyCompactList}\small\item\em Funkcja wyświetla dane odpowiadające obrotowi dłoni w osi Z. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ac455e906758ff6a5967d66a3c55f507c}{send\+Message\+To\+Device}} (QString message)
+\begin{DoxyCompactList}\small\item\em Zapasowa funkcja odpowiedzialna za wysyłanie danych do mikrokontrolera (nieużywana) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Main\+Window $\ast$ \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}
+\begin{DoxyCompactList}\small\item\em Zawiera opis interfejsu aplikacji. \end{DoxyCompactList}\item 
+QSerial\+Port $\ast$ \mbox{\hyperlink{class_main_window_a644ee4e747773d6ea59cdf4bee4deb49}{device}}
+\begin{DoxyCompactList}\small\item\em Klasa odpowiedzialna za komunikacje przezinterfejs UART. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa \mbox{\hyperlink{class_main_window}{Main\+Window}}
+
+Główna klasa aplikacji 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_window_a996c5a2b6f77944776856f08ec30858d}\label{class_main_window_a996c5a2b6f77944776856f08ec30858d}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Konstruktor klasy \mbox{\hyperlink{class_main_window}{Main\+Window}}. Ustawia elementy zgodnie z mainwindow.\+ui. Alokuje pamięć pod obiekt \char`\"{}device\char`\"{} klasy QSerial\+Port. \mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{MainWindow@{MainWindow}!````~MainWindow@{$\sim$MainWindow}}
+\index{````~MainWindow@{$\sim$MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{$\sim$MainWindow()}{~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destruktor klasy \mbox{\hyperlink{class_main_window}{Main\+Window}}. Zwalnia pamięć po obiektach \char`\"{}device\char`\"{} i \char`\"{}ui\char`\"{}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_a74bf7ec51582db3d2d98265b66afc0cc}\label{class_main_window_a74bf7ec51582db3d2d98265b66afc0cc}} 
+\index{MainWindow@{MainWindow}!on\_pushButtonConnect\_clicked@{on\_pushButtonConnect\_clicked}}
+\index{on\_pushButtonConnect\_clicked@{on\_pushButtonConnect\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_pushButtonConnect\_clicked}{on\_pushButtonConnect\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+push\+Button\+Connect\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+Funkcja on\+\_\+push\+Button\+Connect\+\_\+clicked
+
+Funkcja obsługuje sygnał wciśnięcia przycisku \char`\"{}\+Połącz\char`\"{}. W funkcji następuje konfiguracja portu szeregowego. Ustawiany jest na stałe numer portu \char`\"{}\+COM5\char`\"{}. Szybskość transmisji ustawiana na 9600bps. Szerokość samki ustawiana na 8 bitów. Wyłączona obsługa sprawdzenia parzystości. Ustawiony jeden bit \char`\"{}stop\char`\"{}. Wyłączona kontrola przepływu. \mbox{\Hypertarget{class_main_window_a38e5a7fd929962f8ff7591a3d688f9c3}\label{class_main_window_a38e5a7fd929962f8ff7591a3d688f9c3}} 
+\index{MainWindow@{MainWindow}!on\_pushButtonDisconnect\_clicked@{on\_pushButtonDisconnect\_clicked}}
+\index{on\_pushButtonDisconnect\_clicked@{on\_pushButtonDisconnect\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_pushButtonDisconnect\_clicked}{on\_pushButtonDisconnect\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+push\+Button\+Disconnect\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+Funkcja on\+\_\+push\+Button\+Disconnect\+\_\+clicked
+
+Funkcja obsługuje sygnał wciśnięcia przycisku \char`\"{}\+Rozłącz\char`\"{}. Zamyka ona połączenie i wyświetla odpowiednie komunikaty oraz obsługuje błędy wynikające z braku otwartego portu. \mbox{\Hypertarget{class_main_window_a42f11195758f78967e670779c4535708}\label{class_main_window_a42f11195758f78967e670779c4535708}} 
+\index{MainWindow@{MainWindow}!readFromPort@{readFromPort}}
+\index{readFromPort@{readFromPort}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{readFromPort}{readFromPort}}
+{\footnotesize\ttfamily void Main\+Window\+::read\+From\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+Funkcja read\+From\+Port
+
+Funkcja czyta pojedynczą linie odebraną z portu szeregowego i rozdziela odebrane dane na poszczególne elementy (odpowiednie palce i kąty obrotu) \mbox{\Hypertarget{class_main_window_ac455e906758ff6a5967d66a3c55f507c}\label{class_main_window_ac455e906758ff6a5967d66a3c55f507c}} 
+\index{MainWindow@{MainWindow}!sendMessageToDevice@{sendMessageToDevice}}
+\index{sendMessageToDevice@{sendMessageToDevice}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{sendMessageToDevice()}{sendMessageToDevice()}}
+{\footnotesize\ttfamily void Main\+Window\+::send\+Message\+To\+Device (\begin{DoxyParamCaption}\item[{QString}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Zapasowa funkcja odpowiedzialna za wysyłanie danych do mikrokontrolera (nieużywana) 
+
+\mbox{\Hypertarget{class_main_window_ace950b55062506b0e7759f5b559def74}\label{class_main_window_ace950b55062506b0e7759f5b559def74}} 
+\index{MainWindow@{MainWindow}!showAlphaAngleData@{showAlphaAngleData}}
+\index{showAlphaAngleData@{showAlphaAngleData}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showAlphaAngleData()}{showAlphaAngleData()}}
+{\footnotesize\ttfamily void Main\+Window\+::show\+Alpha\+Angle\+Data (\begin{DoxyParamCaption}\item[{QString}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcja wyświetla dane odpowiadające obrotowi dłoni w osi X. 
+
+\mbox{\Hypertarget{class_main_window_a9b677b11681f683ab0bbc513c8eea986}\label{class_main_window_a9b677b11681f683ab0bbc513c8eea986}} 
+\index{MainWindow@{MainWindow}!showBetaAngleData@{showBetaAngleData}}
+\index{showBetaAngleData@{showBetaAngleData}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showBetaAngleData()}{showBetaAngleData()}}
+{\footnotesize\ttfamily void Main\+Window\+::show\+Beta\+Angle\+Data (\begin{DoxyParamCaption}\item[{QString}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcja wyświetla dane odpowiadające obrotowi dłoni w osi Y. 
+
+\mbox{\Hypertarget{class_main_window_a44d3d738404831c63569f8ffe4eaaf2d}\label{class_main_window_a44d3d738404831c63569f8ffe4eaaf2d}} 
+\index{MainWindow@{MainWindow}!showFingerData\_1@{showFingerData\_1}}
+\index{showFingerData\_1@{showFingerData\_1}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showFingerData\_1()}{showFingerData\_1()}}
+{\footnotesize\ttfamily void Main\+Window\+::show\+Finger\+Data\+\_\+1 (\begin{DoxyParamCaption}\item[{QString}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcja wyświetla dane w zakresie 0-\/1023 odpowiadające zgjęciu kciuka. 
+
+\mbox{\Hypertarget{class_main_window_a551c249b3281829456cf70edb57998bb}\label{class_main_window_a551c249b3281829456cf70edb57998bb}} 
+\index{MainWindow@{MainWindow}!showFingerData\_2@{showFingerData\_2}}
+\index{showFingerData\_2@{showFingerData\_2}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showFingerData\_2()}{showFingerData\_2()}}
+{\footnotesize\ttfamily void Main\+Window\+::show\+Finger\+Data\+\_\+2 (\begin{DoxyParamCaption}\item[{QString}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcja wyświetla dane w zakresie 0-\/1023 odpowiadające zgjęciu palca wskazującego. 
+
+\mbox{\Hypertarget{class_main_window_af86122045b7e201bddb3be900b0ef9db}\label{class_main_window_af86122045b7e201bddb3be900b0ef9db}} 
+\index{MainWindow@{MainWindow}!showFingerData\_3@{showFingerData\_3}}
+\index{showFingerData\_3@{showFingerData\_3}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showFingerData\_3()}{showFingerData\_3()}}
+{\footnotesize\ttfamily void Main\+Window\+::show\+Finger\+Data\+\_\+3 (\begin{DoxyParamCaption}\item[{QString}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcja wyświetla dane w zakresie 0-\/1023 odpowiadające zgjęciu palca środkowego. 
+
+\mbox{\Hypertarget{class_main_window_a92786e396ec2be22b9b4b90ce5c9adbd}\label{class_main_window_a92786e396ec2be22b9b4b90ce5c9adbd}} 
+\index{MainWindow@{MainWindow}!showFingerData\_4@{showFingerData\_4}}
+\index{showFingerData\_4@{showFingerData\_4}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showFingerData\_4()}{showFingerData\_4()}}
+{\footnotesize\ttfamily void Main\+Window\+::show\+Finger\+Data\+\_\+4 (\begin{DoxyParamCaption}\item[{QString}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcja wyświetla dane w zakresie 0-\/1023 odpowiadające zgjęciu palca serdecznego. 
+
+\mbox{\Hypertarget{class_main_window_a5357fb7fa27e83a1a507b14cdb64f16b}\label{class_main_window_a5357fb7fa27e83a1a507b14cdb64f16b}} 
+\index{MainWindow@{MainWindow}!showFingerData\_5@{showFingerData\_5}}
+\index{showFingerData\_5@{showFingerData\_5}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showFingerData\_5()}{showFingerData\_5()}}
+{\footnotesize\ttfamily void Main\+Window\+::show\+Finger\+Data\+\_\+5 (\begin{DoxyParamCaption}\item[{QString}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcja wyświetla dane w zakresie 0-\/1023 odpowiadające zgjęciu małego palca. 
+
+\mbox{\Hypertarget{class_main_window_ac694b61c9183b8353bef1bb36908ed58}\label{class_main_window_ac694b61c9183b8353bef1bb36908ed58}} 
+\index{MainWindow@{MainWindow}!showGammaAngleData@{showGammaAngleData}}
+\index{showGammaAngleData@{showGammaAngleData}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showGammaAngleData()}{showGammaAngleData()}}
+{\footnotesize\ttfamily void Main\+Window\+::show\+Gamma\+Angle\+Data (\begin{DoxyParamCaption}\item[{QString}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcja wyświetla dane odpowiadające obrotowi dłoni w osi Z. 
+
+\mbox{\Hypertarget{class_main_window_af66d26a7096dacebe749cdb2499e00ef}\label{class_main_window_af66d26a7096dacebe749cdb2499e00ef}} 
+\index{MainWindow@{MainWindow}!showMainBoard@{showMainBoard}}
+\index{showMainBoard@{showMainBoard}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showMainBoard()}{showMainBoard()}}
+{\footnotesize\ttfamily void Main\+Window\+::show\+Main\+Board (\begin{DoxyParamCaption}\item[{QString}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Funkcja show\+Main\+Board
+
+Funkcja obsługuje główna plansze w aplikacji. W aktualnej wersji aplikacji służy ona do wyświetlania stanu połączenia i odebranych danych wraz z datą i godziną odebrania. W przyszłości będzie odpowiadać za wyświetlanie modelu 3D dłoni. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_main_window_a644ee4e747773d6ea59cdf4bee4deb49}\label{class_main_window_a644ee4e747773d6ea59cdf4bee4deb49}} 
+\index{MainWindow@{MainWindow}!device@{device}}
+\index{device@{device}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{device}{device}}
+{\footnotesize\ttfamily QSerial\+Port$\ast$ Main\+Window\+::device\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Klasa odpowiedzialna za komunikacje przezinterfejs UART. 
+
+\mbox{\Hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5}\label{class_main_window_a35466a70ed47252a0191168126a352a5}} 
+\index{MainWindow@{MainWindow}!ui@{ui}}
+\index{ui@{ui}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Main\+Window$\ast$ Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Zawiera opis interfejsu aplikacji. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mainwindow_8h}{mainwindow.\+h}}\item 
+\mbox{\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}}\end{DoxyCompactItemize}
