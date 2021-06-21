@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>models/finger1.obj</file>
+        <file>models/finger2.obj</file>
+        <file>models/finger3.obj</file>
+        <file>models/finger4.obj</file>
+        <file>models/hand_core.obj</file>
+        <file>models/thumb.obj</file>
+    </qresource>
+</RCC>
