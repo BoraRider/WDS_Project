@@ -1,11 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "dmorsu~",
+  0: "acdgmoprsuvx~",
   1: "m",
   2: "u",
   3: "m",
-  4: "mors~",
-  5: "du"
+  4: "cmors~",
+  5: "adgsuvx",
+  6: "p"
 };
 
 var indexSectionNames =
@@ -15,7 +16,8 @@ var indexSectionNames =
   2: "namespaces",
   3: "files",
   4: "functions",
-  5: "variables"
+  5: "variables",
+  6: "defines"
 };
 
 var indexSectionLabels =
@@ -25,6 +27,7 @@ var indexSectionLabels =
   2: "Namespaces",
   3: "Files",
   4: "Functions",
-  5: "Variables"
+  5: "Variables",
+  6: "Macros"
 };
 

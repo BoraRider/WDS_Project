@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['on_5fpushbuttonconnect_5fclicked_6',['on_pushButtonConnect_clicked',['../class_main_window.html#a74bf7ec51582db3d2d98265b66afc0cc',1,'MainWindow']]],
-  ['on_5fpushbuttondisconnect_5fclicked_7',['on_pushButtonDisconnect_clicked',['../class_main_window.html#a38e5a7fd929962f8ff7591a3d688f9c3',1,'MainWindow']]]
+  ['d_3',['d',['../class_main_window.html#a0e2af80a555c360349dcf9e6ba328008',1,'MainWindow']]],
+  ['device_4',['device',['../class_main_window.html#a644ee4e747773d6ea59cdf4bee4deb49',1,'MainWindow']]],
+  ['dout_5',['dOut',['../class_main_window.html#aae3230c231f7ec55a5458d98e65ad35e',1,'MainWindow']]]
 ];

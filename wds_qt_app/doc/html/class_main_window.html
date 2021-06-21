@@ -73,6 +73,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="class_main_window.html" title="The MainWindow class Główna klasa aplikacji.">MainWindow</a> class Główna klasa aplikacji.  
+ <a href="class_main_window.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for MainWindow:</div>
@@ -84,63 +87,89 @@ Inheritance diagram for MainWindow:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a996c5a2b6f77944776856f08ec30858d"><td class="mdescLeft">&#160;</td><td class="mdescRight">konstruktor <a class="el" href="class_main_window.html" title="The MainWindow class Główna klasa aplikacji.">MainWindow</a> Ustawia elementy zgodnie z mainwindow.ui. Alokuje pamięć pod obiekt "device" klasy QSerialPort. Przeprowadza wstępną konfigurację wykresów QCustomPlot. Przeprowadza wstępną konfigurację obiektów w warstwie QML oraz linkuje odpowiedni plik.  <a href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">More...</a><br /></td></tr>
 <tr class="separator:a996c5a2b6f77944776856f08ec30858d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a> ()</td></tr>
+<tr class="memdesc:ae98d00a93bc118200eeef9f9bba1dba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klasy <a class="el" href="class_main_window.html" title="The MainWindow class Główna klasa aplikacji.">MainWindow</a>. Zwalnia pamięć po obiektach "device" i "ui".  <a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">More...</a><br /></td></tr>
 <tr class="separator:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
 Private Slots</h2></td></tr>
 <tr class="memitem:a42f11195758f78967e670779c4535708"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a42f11195758f78967e670779c4535708">readFromPort</a> ()</td></tr>
+<tr class="memdesc:a42f11195758f78967e670779c4535708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja readFromPort Czyta pojedynczą linie odebraną z portu szeregowego i rozdziela odebrane dane na poszczególne elementy (odpowiednie palce i kąty obrotu).  <a href="class_main_window.html#a42f11195758f78967e670779c4535708">More...</a><br /></td></tr>
 <tr class="separator:a42f11195758f78967e670779c4535708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74bf7ec51582db3d2d98265b66afc0cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a74bf7ec51582db3d2d98265b66afc0cc">on_pushButtonConnect_clicked</a> ()</td></tr>
+<tr class="memdesc:a74bf7ec51582db3d2d98265b66afc0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja on_pushButtonConnect_clicked Funkcja obsługuje sygnał wciśnięcia przycisku "Połącz". Obsługuje ona nawiązanie połączenia między komputerem a urządzeniem aktualnie wyświetlanym w menu kontekstowym comboBoxDevices W funkcji następuje konfiguracja portu szeregowego: Ustawiany jest numer portu wybrany z menu kontekstowego Szybskość transmisji ustawiana jest na 9600bps. Szerokość samki ustawiana jest na 8 bitów. Wyłączona jest obsługa sprawdzenia parzystości. Ustawiony jest jeden bit "stop". Wyłączona jest kontrola przepływu.  <a href="class_main_window.html#a74bf7ec51582db3d2d98265b66afc0cc">More...</a><br /></td></tr>
 <tr class="separator:a74bf7ec51582db3d2d98265b66afc0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38e5a7fd929962f8ff7591a3d688f9c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a38e5a7fd929962f8ff7591a3d688f9c3">on_pushButtonDisconnect_clicked</a> ()</td></tr>
+<tr class="memdesc:a38e5a7fd929962f8ff7591a3d688f9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja on_pushButtonDisconnect_clicked Funkcja obsługuje sygnał wciśnięcia przycisku "Rozłącz". Zamyka ona połączenie i wyświetla odpowiednie komunikaty oraz obsługuje błędy wynikające z braku otwartego portu.  <a href="class_main_window.html#a38e5a7fd929962f8ff7591a3d688f9c3">More...</a><br /></td></tr>
 <tr class="separator:a38e5a7fd929962f8ff7591a3d688f9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd6fd2201adc933d4fe8d053865710f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a5dd6fd2201adc933d4fe8d053865710f">on_pushButtonSearch_clicked</a> ()</td></tr>
+<tr class="memdesc:a5dd6fd2201adc933d4fe8d053865710f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja on_pushButtonSearch_clicked Funkcja obsługuje sygnał wciśnięcia przycisku "Szukaj". Wyszukuje ona znalezione urządzenia podłączone do portów COM. Wyszukane urządzenia pokazywane są w menu kontekstowym comboBoxDevices jako wykryte porty np. "COM5".  <a href="class_main_window.html#a5dd6fd2201adc933d4fe8d053865710f">More...</a><br /></td></tr>
+<tr class="separator:a5dd6fd2201adc933d4fe8d053865710f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce2f873632f2b1a053d907c1a7f2602"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a0ce2f873632f2b1a053d907c1a7f2602">on_showData_clicked</a> ()</td></tr>
+<tr class="memdesc:a0ce2f873632f2b1a053d907c1a7f2602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja <a class="el" href="class_main_window.html#a0ce2f873632f2b1a053d907c1a7f2602" title="Funkcja on_showData_clicked(); Funkcja obsługuje sygnał wciśnięcia przycisku &quot;Dane&quot;....">on_showData_clicked()</a>; Funkcja obsługuje sygnał wciśnięcia przycisku "Dane". Zmienia widok aplikacji. Pokazuje plansze z wartościami liczbowymi (zamiast wykresów) oraz dziennik odebranych danych (zamiast widoku 3D).  <a href="class_main_window.html#a0ce2f873632f2b1a053d907c1a7f2602">More...</a><br /></td></tr>
+<tr class="separator:a0ce2f873632f2b1a053d907c1a7f2602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e5d093c32e5625957ab254e5dcd81a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a99e5d093c32e5625957ab254e5dcd81a">on_showCharts_clicked</a> ()</td></tr>
+<tr class="memdesc:a99e5d093c32e5625957ab254e5dcd81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja <a class="el" href="class_main_window.html#a99e5d093c32e5625957ab254e5dcd81a" title="Funkcja on_showCharts_clicked(); Funkcja obsługuje sygnał wciśnięcia przycisku &quot;Wykresy&quot;....">on_showCharts_clicked()</a>; Funkcja obsługuje sygnał wciśnięcia przycisku "Wykresy". Zmienia widok aplikacji. Pokazuje plansze z wykresami (zamiast wartości liczbowych) oraz widok 3D dłoni (zamiast dziennika odebranych danych).  <a href="class_main_window.html#a99e5d093c32e5625957ab254e5dcd81a">More...</a><br /></td></tr>
+<tr class="separator:a99e5d093c32e5625957ab254e5dcd81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:af66d26a7096dacebe749cdb2499e00ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#af66d26a7096dacebe749cdb2499e00ef">showMainBoard</a> (QString message)</td></tr>
+<tr class="memdesc:af66d26a7096dacebe749cdb2499e00ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja showMainBoard Funkcja służy ona do wyświetlania stanu połączenia i odebranych danych w oknie textEditBoard.  <a href="class_main_window.html#af66d26a7096dacebe749cdb2499e00ef">More...</a><br /></td></tr>
 <tr class="separator:af66d26a7096dacebe749cdb2499e00ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44d3d738404831c63569f8ffe4eaaf2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a44d3d738404831c63569f8ffe4eaaf2d">showFingerData_1</a> (QString message)</td></tr>
-<tr class="memdesc:a44d3d738404831c63569f8ffe4eaaf2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wyświetla dane w zakresie 0-1023 odpowiadające zgjęciu kciuka.  <a href="class_main_window.html#a44d3d738404831c63569f8ffe4eaaf2d">More...</a><br /></td></tr>
-<tr class="separator:a44d3d738404831c63569f8ffe4eaaf2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a551c249b3281829456cf70edb57998bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a551c249b3281829456cf70edb57998bb">showFingerData_2</a> (QString message)</td></tr>
-<tr class="memdesc:a551c249b3281829456cf70edb57998bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wyświetla dane w zakresie 0-1023 odpowiadające zgjęciu palca wskazującego.  <a href="class_main_window.html#a551c249b3281829456cf70edb57998bb">More...</a><br /></td></tr>
-<tr class="separator:a551c249b3281829456cf70edb57998bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af86122045b7e201bddb3be900b0ef9db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#af86122045b7e201bddb3be900b0ef9db">showFingerData_3</a> (QString message)</td></tr>
-<tr class="memdesc:af86122045b7e201bddb3be900b0ef9db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wyświetla dane w zakresie 0-1023 odpowiadające zgjęciu palca środkowego.  <a href="class_main_window.html#af86122045b7e201bddb3be900b0ef9db">More...</a><br /></td></tr>
-<tr class="separator:af86122045b7e201bddb3be900b0ef9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92786e396ec2be22b9b4b90ce5c9adbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a92786e396ec2be22b9b4b90ce5c9adbd">showFingerData_4</a> (QString message)</td></tr>
-<tr class="memdesc:a92786e396ec2be22b9b4b90ce5c9adbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wyświetla dane w zakresie 0-1023 odpowiadające zgjęciu palca serdecznego.  <a href="class_main_window.html#a92786e396ec2be22b9b4b90ce5c9adbd">More...</a><br /></td></tr>
-<tr class="separator:a92786e396ec2be22b9b4b90ce5c9adbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5357fb7fa27e83a1a507b14cdb64f16b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a5357fb7fa27e83a1a507b14cdb64f16b">showFingerData_5</a> (QString message)</td></tr>
-<tr class="memdesc:a5357fb7fa27e83a1a507b14cdb64f16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wyświetla dane w zakresie 0-1023 odpowiadające zgjęciu małego palca.  <a href="class_main_window.html#a5357fb7fa27e83a1a507b14cdb64f16b">More...</a><br /></td></tr>
-<tr class="separator:a5357fb7fa27e83a1a507b14cdb64f16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace950b55062506b0e7759f5b559def74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ace950b55062506b0e7759f5b559def74">showAlphaAngleData</a> (QString message)</td></tr>
-<tr class="memdesc:ace950b55062506b0e7759f5b559def74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wyświetla dane odpowiadające obrotowi dłoni w osi X.  <a href="class_main_window.html#ace950b55062506b0e7759f5b559def74">More...</a><br /></td></tr>
-<tr class="separator:ace950b55062506b0e7759f5b559def74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b677b11681f683ab0bbc513c8eea986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a9b677b11681f683ab0bbc513c8eea986">showBetaAngleData</a> (QString message)</td></tr>
-<tr class="memdesc:a9b677b11681f683ab0bbc513c8eea986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wyświetla dane odpowiadające obrotowi dłoni w osi Y.  <a href="class_main_window.html#a9b677b11681f683ab0bbc513c8eea986">More...</a><br /></td></tr>
-<tr class="separator:a9b677b11681f683ab0bbc513c8eea986"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac694b61c9183b8353bef1bb36908ed58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ac694b61c9183b8353bef1bb36908ed58">showGammaAngleData</a> (QString message)</td></tr>
-<tr class="memdesc:ac694b61c9183b8353bef1bb36908ed58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wyświetla dane odpowiadające obrotowi dłoni w osi Z.  <a href="class_main_window.html#ac694b61c9183b8353bef1bb36908ed58">More...</a><br /></td></tr>
-<tr class="separator:ac694b61c9183b8353bef1bb36908ed58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac455e906758ff6a5967d66a3c55f507c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ac455e906758ff6a5967d66a3c55f507c">sendMessageToDevice</a> (QString message)</td></tr>
-<tr class="memdesc:ac455e906758ff6a5967d66a3c55f507c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapasowa funkcja odpowiedzialna za wysyłanie danych do mikrokontrolera (nieużywana)  <a href="class_main_window.html#ac455e906758ff6a5967d66a3c55f507c">More...</a><br /></td></tr>
-<tr class="separator:ac455e906758ff6a5967d66a3c55f507c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d002ffbfb5ea9395f85cb8db1c8e6b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a0d002ffbfb5ea9395f85cb8db1c8e6b5">showAllData</a> ()</td></tr>
+<tr class="memdesc:a0d002ffbfb5ea9395f85cb8db1c8e6b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja showAllData Funkcja odpowiada za wyswietlanie wszystkich danych odczytanych z czujnikow.  <a href="class_main_window.html#a0d002ffbfb5ea9395f85cb8db1c8e6b5">More...</a><br /></td></tr>
+<tr class="separator:a0d002ffbfb5ea9395f85cb8db1c8e6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa65480924afee8246ba3875087d680"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a9aa65480924afee8246ba3875087d680">CRC8_SingleByte</a> (byte CRC_prev, byte Data)</td></tr>
+<tr class="memdesc:a9aa65480924afee8246ba3875087d680"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRC8_SingleByte to funkcja pomocnicza głównej funkcji CRC8_DataArray. Oblicza ona pojedyńczy bajt z przekazanego ciągu znaków.  <a href="class_main_window.html#a9aa65480924afee8246ba3875087d680">More...</a><br /></td></tr>
+<tr class="separator:a9aa65480924afee8246ba3875087d680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a35bf908880dcca1cbdea64cc442fb"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ac5a35bf908880dcca1cbdea64cc442fb">CRC8_DataArray</a> (byte *pData, byte Len)</td></tr>
+<tr class="memdesc:ac5a35bf908880dcca1cbdea64cc442fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRC8_DataArray to główna funkcja licząca sumę kontrolną. Wykorzystuje ona funkcje CRC8_SingleByte.  <a href="class_main_window.html#ac5a35bf908880dcca1cbdea64cc442fb">More...</a><br /></td></tr>
+<tr class="separator:ac5a35bf908880dcca1cbdea64cc442fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22caed21ff6b4834bbcec55c47d0dba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a22caed21ff6b4834bbcec55c47d0dba0">string2ByteArray</a> (char *input, byte *output)</td></tr>
+<tr class="memdesc:a22caed21ff6b4834bbcec55c47d0dba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">string2ByteArray to funkcja zmieniająca ciąg znaków char na unsigned char (byte)  <a href="class_main_window.html#a22caed21ff6b4834bbcec55c47d0dba0">More...</a><br /></td></tr>
+<tr class="separator:a22caed21ff6b4834bbcec55c47d0dba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a35466a70ed47252a0191168126a352a5"><td class="memItemLeft" align="right" valign="top">Ui::MainWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a35466a70ed47252a0191168126a352a5">ui</a></td></tr>
-<tr class="memdesc:a35466a70ed47252a0191168126a352a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zawiera opis interfejsu aplikacji.  <a href="class_main_window.html#a35466a70ed47252a0191168126a352a5">More...</a><br /></td></tr>
+<tr class="memdesc:a35466a70ed47252a0191168126a352a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Klasa odpowiedzialna za układ interfejsu graficznego.  <a href="class_main_window.html#a35466a70ed47252a0191168126a352a5">More...</a><br /></td></tr>
 <tr class="separator:a35466a70ed47252a0191168126a352a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3230c231f7ec55a5458d98e65ad35e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#aae3230c231f7ec55a5458d98e65ad35e">dOut</a> [9]</td></tr>
+<tr class="memdesc:aae3230c231f7ec55a5458d98e65ad35e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tablica przechowująca wartości odebrane z uart przekonwertowane do typu int.  <a href="class_main_window.html#aae3230c231f7ec55a5458d98e65ad35e">More...</a><br /></td></tr>
+<tr class="separator:aae3230c231f7ec55a5458d98e65ad35e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb629eb70fde80342bc800ca1ba244a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#aeb629eb70fde80342bc800ca1ba244a8">x_loop_counter</a></td></tr>
+<tr class="memdesc:aeb629eb70fde80342bc800ca1ba244a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wartość liczbowa typu int tworząca podstawę wykresów.  <a href="class_main_window.html#aeb629eb70fde80342bc800ca1ba244a8">More...</a><br /></td></tr>
+<tr class="separator:aeb629eb70fde80342bc800ca1ba244a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e2af80a555c360349dcf9e6ba328008"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a0e2af80a555c360349dcf9e6ba328008">d</a> [9]</td></tr>
+<tr class="memdesc:a0e2af80a555c360349dcf9e6ba328008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tablica przechowująca wartości bezpośrednio odebrane z interfejsu szeregowego w formie QString.  <a href="class_main_window.html#a0e2af80a555c360349dcf9e6ba328008">More...</a><br /></td></tr>
+<tr class="separator:a0e2af80a555c360349dcf9e6ba328008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ec9d33985328a27e891b9a620712e5"><td class="memItemLeft" align="right" valign="top">QVector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a29ec9d33985328a27e891b9a620712e5">general_x_vector</a></td></tr>
+<tr class="memdesc:a29ec9d33985328a27e891b9a620712e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wektor tworzący podstawe czasu wykresów.  <a href="class_main_window.html#a29ec9d33985328a27e891b9a620712e5">More...</a><br /></td></tr>
+<tr class="separator:a29ec9d33985328a27e891b9a620712e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c3b375b6076515a5a2b98d5565bafd"><td class="memItemLeft" align="right" valign="top">QVector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a59c3b375b6076515a5a2b98d5565bafd">v</a> [8]</td></tr>
+<tr class="memdesc:a59c3b375b6076515a5a2b98d5565bafd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tablica wektorów przechowująca historyczne wartości odebranych i przekonwetowanych do int danych.  <a href="class_main_window.html#a59c3b375b6076515a5a2b98d5565bafd">More...</a><br /></td></tr>
+<tr class="separator:a59c3b375b6076515a5a2b98d5565bafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a200a652a61ff5bd4a13043b9e03e2d82"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a200a652a61ff5bd4a13043b9e03e2d82">str</a> [128]</td></tr>
+<tr class="memdesc:a200a652a61ff5bd4a13043b9e03e2d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tablica char przechowująca ciąg znaków odebranych z interfejsu szeregowego.  <a href="class_main_window.html#a200a652a61ff5bd4a13043b9e03e2d82">More...</a><br /></td></tr>
+<tr class="separator:a200a652a61ff5bd4a13043b9e03e2d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25aeb294d862ad4e47bc60ee79ce5520"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a25aeb294d862ad4e47bc60ee79ce5520">str_len</a> =0</td></tr>
+<tr class="memdesc:a25aeb294d862ad4e47bc60ee79ce5520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna pomocnicza do określania długości łańcucha znaków.  <a href="class_main_window.html#a25aeb294d862ad4e47bc60ee79ce5520">More...</a><br /></td></tr>
+<tr class="separator:a25aeb294d862ad4e47bc60ee79ce5520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8138620da212065ddbc9f28f6967a81"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ab8138620da212065ddbc9f28f6967a81">arr</a> [128]</td></tr>
+<tr class="memdesc:ab8138620da212065ddbc9f28f6967a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tablica typu unsigned char przechowująca przekonwertowaną tablice str.  <a href="class_main_window.html#ab8138620da212065ddbc9f28f6967a81">More...</a><br /></td></tr>
+<tr class="separator:ab8138620da212065ddbc9f28f6967a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c5d3e3a1b988b8da00e302e3b9159a"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a98c5d3e3a1b988b8da00e302e3b9159a">sum_crc</a></td></tr>
+<tr class="memdesc:a98c5d3e3a1b988b8da00e302e3b9159a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna przechowująca obliczoną sumę kontrolną  <a href="class_main_window.html#a98c5d3e3a1b988b8da00e302e3b9159a">More...</a><br /></td></tr>
+<tr class="separator:a98c5d3e3a1b988b8da00e302e3b9159a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a644ee4e747773d6ea59cdf4bee4deb49"><td class="memItemLeft" align="right" valign="top">QSerialPort *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a644ee4e747773d6ea59cdf4bee4deb49">device</a></td></tr>
 <tr class="memdesc:a644ee4e747773d6ea59cdf4bee4deb49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Klasa odpowiedzialna za komunikacje przezinterfejs UART.  <a href="class_main_window.html#a644ee4e747773d6ea59cdf4bee4deb49">More...</a><br /></td></tr>
 <tr class="separator:a644ee4e747773d6ea59cdf4bee4deb49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>klasa <a class="el" href="class_main_window.html">MainWindow</a></p>
-<p>Główna klasa aplikacji </p>
+<div class="textblock"><p>The <a class="el" href="class_main_window.html" title="The MainWindow class Główna klasa aplikacji.">MainWindow</a> class Główna klasa aplikacji. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a996c5a2b6f77944776856f08ec30858d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a996c5a2b6f77944776856f08ec30858d">&#9670;&nbsp;</a></span>MainWindow()</h2>
@@ -157,7 +186,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Konstruktor klasy <a class="el" href="class_main_window.html">MainWindow</a>. Ustawia elementy zgodnie z mainwindow.ui. Alokuje pamięć pod obiekt "device" klasy QSerialPort. </p>
+
+<p>konstruktor <a class="el" href="class_main_window.html" title="The MainWindow class Główna klasa aplikacji.">MainWindow</a> Ustawia elementy zgodnie z mainwindow.ui. Alokuje pamięć pod obiekt "device" klasy QSerialPort. Przeprowadza wstępną konfigurację wykresów QCustomPlot. Przeprowadza wstępną konfigurację obiektów w warstwie QML oraz linkuje odpowiedni plik. </p>
 
 </div>
 </div>
@@ -175,11 +205,104 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Destruktor klasy <a class="el" href="class_main_window.html">MainWindow</a>. Zwalnia pamięć po obiektach "device" i "ui". </p>
+
+<p>Destruktor klasy <a class="el" href="class_main_window.html" title="The MainWindow class Główna klasa aplikacji.">MainWindow</a>. Zwalnia pamięć po obiektach "device" i "ui". </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac5a35bf908880dcca1cbdea64cc442fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5a35bf908880dcca1cbdea64cc442fb">&#9670;&nbsp;</a></span>CRC8_DataArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte MainWindow::CRC8_DataArray </td>
+          <td>(</td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>pData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>Len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>CRC8_DataArray to główna funkcja licząca sumę kontrolną. Wykorzystuje ona funkcje CRC8_SingleByte. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pData</td><td>Ciąg znaków, z których obliczana jest suma kontrolna </td></tr>
+    <tr><td class="paramname">Len</td><td>Długość łańcucha znaków pData </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Funkcja zwraca obliczoną sumę kontrolną </dd></dl>
+
+</div>
+</div>
+<a id="a9aa65480924afee8246ba3875087d680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa65480924afee8246ba3875087d680">&#9670;&nbsp;</a></span>CRC8_SingleByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte MainWindow::CRC8_SingleByte </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>CRC_prev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>Data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>CRC8_SingleByte to funkcja pomocnicza głównej funkcji CRC8_DataArray. Oblicza ona pojedyńczy bajt z przekazanego ciągu znaków. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CRC_prev</td><td>Zmienna przechowująca pojedyńczy bajt </td></tr>
+    <tr><td class="paramname">Data</td><td>Zmienna potrzebna przy dzieleniu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Funkcja zwraca pojedyńczy bajt po przeprowadzeniu dzielenia </dd></dl>
+
+</div>
+</div>
 <a id="a74bf7ec51582db3d2d98265b66afc0cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74bf7ec51582db3d2d98265b66afc0cc">&#9670;&nbsp;</a></span>on_pushButtonConnect_clicked</h2>
 
@@ -202,8 +325,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Funkcja on_pushButtonConnect_clicked</p>
-<p>Funkcja obsługuje sygnał wciśnięcia przycisku "Połącz". W funkcji następuje konfiguracja portu szeregowego. Ustawiany jest na stałe numer portu "COM5". Szybskość transmisji ustawiana na 9600bps. Szerokość samki ustawiana na 8 bitów. Wyłączona obsługa sprawdzenia parzystości. Ustawiony jeden bit "stop". Wyłączona kontrola przepływu. </p>
+
+<p>Funkcja on_pushButtonConnect_clicked Funkcja obsługuje sygnał wciśnięcia przycisku "Połącz". Obsługuje ona nawiązanie połączenia między komputerem a urządzeniem aktualnie wyświetlanym w menu kontekstowym comboBoxDevices W funkcji następuje konfiguracja portu szeregowego: Ustawiany jest numer portu wybrany z menu kontekstowego Szybskość transmisji ustawiana jest na 9600bps. Szerokość samki ustawiana jest na 8 bitów. Wyłączona jest obsługa sprawdzenia parzystości. Ustawiony jest jeden bit "stop". Wyłączona jest kontrola przepływu. </p>
 
 </div>
 </div>
@@ -229,8 +352,89 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Funkcja on_pushButtonDisconnect_clicked</p>
-<p>Funkcja obsługuje sygnał wciśnięcia przycisku "Rozłącz". Zamyka ona połączenie i wyświetla odpowiednie komunikaty oraz obsługuje błędy wynikające z braku otwartego portu. </p>
+
+<p>Funkcja on_pushButtonDisconnect_clicked Funkcja obsługuje sygnał wciśnięcia przycisku "Rozłącz". Zamyka ona połączenie i wyświetla odpowiednie komunikaty oraz obsługuje błędy wynikające z braku otwartego portu. </p>
+
+</div>
+</div>
+<a id="a5dd6fd2201adc933d4fe8d053865710f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd6fd2201adc933d4fe8d053865710f">&#9670;&nbsp;</a></span>on_pushButtonSearch_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_pushButtonSearch_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja on_pushButtonSearch_clicked Funkcja obsługuje sygnał wciśnięcia przycisku "Szukaj". Wyszukuje ona znalezione urządzenia podłączone do portów COM. Wyszukane urządzenia pokazywane są w menu kontekstowym comboBoxDevices jako wykryte porty np. "COM5". </p>
+
+</div>
+</div>
+<a id="a99e5d093c32e5625957ab254e5dcd81a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e5d093c32e5625957ab254e5dcd81a">&#9670;&nbsp;</a></span>on_showCharts_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_showCharts_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja <a class="el" href="class_main_window.html#a99e5d093c32e5625957ab254e5dcd81a" title="Funkcja on_showCharts_clicked(); Funkcja obsługuje sygnał wciśnięcia przycisku &quot;Wykresy&quot;....">on_showCharts_clicked()</a>; Funkcja obsługuje sygnał wciśnięcia przycisku "Wykresy". Zmienia widok aplikacji. Pokazuje plansze z wykresami (zamiast wartości liczbowych) oraz widok 3D dłoni (zamiast dziennika odebranych danych). </p>
+
+</div>
+</div>
+<a id="a0ce2f873632f2b1a053d907c1a7f2602"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ce2f873632f2b1a053d907c1a7f2602">&#9670;&nbsp;</a></span>on_showData_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_showData_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja <a class="el" href="class_main_window.html#a0ce2f873632f2b1a053d907c1a7f2602" title="Funkcja on_showData_clicked(); Funkcja obsługuje sygnał wciśnięcia przycisku &quot;Dane&quot;....">on_showData_clicked()</a>; Funkcja obsługuje sygnał wciśnięcia przycisku "Dane". Zmienia widok aplikacji. Pokazuje plansze z wartościami liczbowymi (zamiast wykresów) oraz dziennik odebranych danych (zamiast widoku 3D). </p>
 
 </div>
 </div>
@@ -256,13 +460,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Funkcja readFromPort</p>
-<p>Funkcja czyta pojedynczą linie odebraną z portu szeregowego i rozdziela odebrane dane na poszczególne elementy (odpowiednie palce i kąty obrotu) </p>
+
+<p>Funkcja readFromPort Czyta pojedynczą linie odebraną z portu szeregowego i rozdziela odebrane dane na poszczególne elementy (odpowiednie palce i kąty obrotu). </p>
 
 </div>
 </div>
-<a id="ac455e906758ff6a5967d66a3c55f507c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac455e906758ff6a5967d66a3c55f507c">&#9670;&nbsp;</a></span>sendMessageToDevice()</h2>
+<a id="a0d002ffbfb5ea9395f85cb8db1c8e6b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d002ffbfb5ea9395f85cb8db1c8e6b5">&#9670;&nbsp;</a></span>showAllData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -271,10 +475,9 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void MainWindow::sendMessageToDevice </td>
+          <td class="memname">void MainWindow::showAllData </td>
           <td>(</td>
-          <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -285,231 +488,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Zapasowa funkcja odpowiedzialna za wysyłanie danych do mikrokontrolera (nieużywana) </p>
-
-</div>
-</div>
-<a id="ace950b55062506b0e7759f5b559def74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace950b55062506b0e7759f5b559def74">&#9670;&nbsp;</a></span>showAlphaAngleData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MainWindow::showAlphaAngleData </td>
-          <td>(</td>
-          <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Funkcja wyświetla dane odpowiadające obrotowi dłoni w osi X. </p>
-
-</div>
-</div>
-<a id="a9b677b11681f683ab0bbc513c8eea986"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b677b11681f683ab0bbc513c8eea986">&#9670;&nbsp;</a></span>showBetaAngleData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MainWindow::showBetaAngleData </td>
-          <td>(</td>
-          <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Funkcja wyświetla dane odpowiadające obrotowi dłoni w osi Y. </p>
-
-</div>
-</div>
-<a id="a44d3d738404831c63569f8ffe4eaaf2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44d3d738404831c63569f8ffe4eaaf2d">&#9670;&nbsp;</a></span>showFingerData_1()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MainWindow::showFingerData_1 </td>
-          <td>(</td>
-          <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Funkcja wyświetla dane w zakresie 0-1023 odpowiadające zgjęciu kciuka. </p>
-
-</div>
-</div>
-<a id="a551c249b3281829456cf70edb57998bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a551c249b3281829456cf70edb57998bb">&#9670;&nbsp;</a></span>showFingerData_2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MainWindow::showFingerData_2 </td>
-          <td>(</td>
-          <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Funkcja wyświetla dane w zakresie 0-1023 odpowiadające zgjęciu palca wskazującego. </p>
-
-</div>
-</div>
-<a id="af86122045b7e201bddb3be900b0ef9db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af86122045b7e201bddb3be900b0ef9db">&#9670;&nbsp;</a></span>showFingerData_3()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MainWindow::showFingerData_3 </td>
-          <td>(</td>
-          <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Funkcja wyświetla dane w zakresie 0-1023 odpowiadające zgjęciu palca środkowego. </p>
-
-</div>
-</div>
-<a id="a92786e396ec2be22b9b4b90ce5c9adbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92786e396ec2be22b9b4b90ce5c9adbd">&#9670;&nbsp;</a></span>showFingerData_4()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MainWindow::showFingerData_4 </td>
-          <td>(</td>
-          <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Funkcja wyświetla dane w zakresie 0-1023 odpowiadające zgjęciu palca serdecznego. </p>
-
-</div>
-</div>
-<a id="a5357fb7fa27e83a1a507b14cdb64f16b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5357fb7fa27e83a1a507b14cdb64f16b">&#9670;&nbsp;</a></span>showFingerData_5()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MainWindow::showFingerData_5 </td>
-          <td>(</td>
-          <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Funkcja wyświetla dane w zakresie 0-1023 odpowiadające zgjęciu małego palca. </p>
-
-</div>
-</div>
-<a id="ac694b61c9183b8353bef1bb36908ed58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac694b61c9183b8353bef1bb36908ed58">&#9670;&nbsp;</a></span>showGammaAngleData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MainWindow::showGammaAngleData </td>
-          <td>(</td>
-          <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Funkcja wyświetla dane odpowiadające obrotowi dłoni w osi Z. </p>
+<p>Funkcja showAllData Funkcja odpowiada za wyswietlanie wszystkich danych odczytanych z czujnikow. </p>
 
 </div>
 </div>
@@ -536,12 +515,111 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Funkcja showMainBoard</p>
-<p>Funkcja obsługuje główna plansze w aplikacji. W aktualnej wersji aplikacji służy ona do wyświetlania stanu połączenia i odebranych danych wraz z datą i godziną odebrania. W przyszłości będzie odpowiadać za wyświetlanie modelu 3D dłoni. </p>
+
+<p>Funkcja showMainBoard Funkcja służy ona do wyświetlania stanu połączenia i odebranych danych w oknie textEditBoard. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>Wartość QString zawierająca dane do wyświetlenia w oknie textEditBoard. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a22caed21ff6b4834bbcec55c47d0dba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22caed21ff6b4834bbcec55c47d0dba0">&#9670;&nbsp;</a></span>string2ByteArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::string2ByteArray </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>string2ByteArray to funkcja zmieniająca ciąg znaków char na unsigned char (byte) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Ciąg znaków typu char do konwersji przekazany przez wskaźnik </td></tr>
+    <tr><td class="paramname">output</td><td>Ciąg znaków typu unsigned char po konwersji przekazany przez wskaźnik </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab8138620da212065ddbc9f28f6967a81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8138620da212065ddbc9f28f6967a81">&#9670;&nbsp;</a></span>arr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte MainWindow::arr[128]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tablica typu unsigned char przechowująca przekonwertowaną tablice str. </p>
+
+</div>
+</div>
+<a id="a0e2af80a555c360349dcf9e6ba328008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e2af80a555c360349dcf9e6ba328008">&#9670;&nbsp;</a></span>d</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MainWindow::d[9]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tablica przechowująca wartości bezpośrednio odebrane z interfejsu szeregowego w formie QString. </p>
+
+</div>
+</div>
 <a id="a644ee4e747773d6ea59cdf4bee4deb49"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a644ee4e747773d6ea59cdf4bee4deb49">&#9670;&nbsp;</a></span>device</h2>
 
@@ -566,6 +644,126 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aae3230c231f7ec55a5458d98e65ad35e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae3230c231f7ec55a5458d98e65ad35e">&#9670;&nbsp;</a></span>dOut</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainWindow::dOut[9]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tablica przechowująca wartości odebrane z uart przekonwertowane do typu int. </p>
+
+</div>
+</div>
+<a id="a29ec9d33985328a27e891b9a620712e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29ec9d33985328a27e891b9a620712e5">&#9670;&nbsp;</a></span>general_x_vector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;double&gt; MainWindow::general_x_vector</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wektor tworzący podstawe czasu wykresów. </p>
+
+</div>
+</div>
+<a id="a200a652a61ff5bd4a13043b9e03e2d82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a200a652a61ff5bd4a13043b9e03e2d82">&#9670;&nbsp;</a></span>str</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char MainWindow::str[128]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tablica char przechowująca ciąg znaków odebranych z interfejsu szeregowego. </p>
+
+</div>
+</div>
+<a id="a25aeb294d862ad4e47bc60ee79ce5520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25aeb294d862ad4e47bc60ee79ce5520">&#9670;&nbsp;</a></span>str_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t MainWindow::str_len =0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zmienna pomocnicza do określania długości łańcucha znaków. </p>
+
+</div>
+</div>
+<a id="a98c5d3e3a1b988b8da00e302e3b9159a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98c5d3e3a1b988b8da00e302e3b9159a">&#9670;&nbsp;</a></span>sum_crc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte MainWindow::sum_crc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zmienna przechowująca obliczoną sumę kontrolną </p>
+
+</div>
+</div>
 <a id="a35466a70ed47252a0191168126a352a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35466a70ed47252a0191168126a352a5">&#9670;&nbsp;</a></span>ui</h2>
 
@@ -586,13 +784,60 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Zawiera opis interfejsu aplikacji. </p>
+<p>Klasa odpowiedzialna za układ interfejsu graficznego. </p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<a id="a59c3b375b6076515a5a2b98d5565bafd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59c3b375b6076515a5a2b98d5565bafd">&#9670;&nbsp;</a></span>v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;double&gt; MainWindow::v[8]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tablica wektorów przechowująca historyczne wartości odebranych i przekonwetowanych do int danych. </p>
+
+</div>
+</div>
+<a id="aeb629eb70fde80342bc800ca1ba244a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb629eb70fde80342bc800ca1ba244a8">&#9670;&nbsp;</a></span>x_loop_counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainWindow::x_loop_counter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wartość liczbowa typu int tworząca podstawę wykresów. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="mainwindow_8h_source.html">mainwindow.h</a></li>
-<li><a class="el" href="mainwindow_8cpp.html">mainwindow.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
